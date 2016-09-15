@@ -1,0 +1,37 @@
+<h1 class="text-h2-lightblue">Bio-Medical Signal Processing Toolkit</h1>
+<p></p>
+<p>It is concerned with the representation of signals by a sequence of numbers or symbols and the processing of these signals. Digital signal processing and analog signal processing are subfields of signal processing. DSP includes subfields like: audio and speech signal processing, sonar and radar signal processing, sensor array processing, spectral estimation, statistical signal processing, digital image processing, signal processing for communications, control of systems, biomedical signal processing, seismic data processing, etc.</p>
+<p>The goal of DSP is usually to measure, filter and/or compress continuous real-world analog signals. The first step is usually to convert the signal from an analog to a digital form, by sampling it using an analog-to-digital converter (ADC), which turns the analog signal into a stream of numbers. However, often, the required output signal is another analog output signal, which requires a digital-to-analog converter (DAC). Even if this process is more complex than analog processing and has a discrete value range, the application of computational power to digital signal processing allows for many advantages over analog processing in many applications, such as error detection and correction in transmission as well as data compression.</p>
+<p></p>
+<h2><u>Statistical Parameters</u></h2>
+<p></p>
+<p>To calculate the statistical parameters of any function or signal, first of all we need to acquire the signal. Here, we have generated a sine wave using the signal generator VI. The sine wave generated can be written as:<br /> f(<em>x</em>) = sin(80Ď<em>x</em>)</p>
+<p></p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp2/images/Image_001.jpg" style="width: 651px; height: 474px;" align="absmiddle" /></p>
+<p></p>
+<p><br /> The minimum and maximum values of the function are 1 and -1 respectively.<br /> The mean of this signal over the time interval of 0.01 second is zero as the average value of sine wave over one complete cycle is zero. Hence, the average value over four cycles has to be zero.<br /> The rms value of a sine wave is given by peak/&acirc;2. The peak value of the signal acquired here is . hence the rms value must be one divided by square root of 2 which is 0.707.<br /> Since all the values ranging from -1 to 1 are present in the sine wave in one cycle, so the central value must be equal to zero.<br /><br /><br /><br /></p>
+<p></p>
+<p>Since a sine wave is symmetric in full cycle, the skewness is zero. It can also be observed that third moment of the sine wave is equal to zero in a full cycle and hence the skewness is equal to zero.<br /> The fourth moment of the given function about the mean is equal to 0.375.<br /> Hence, the kurtosis is given by fourth moment divided by square of variance which is equal to 1.5.<br /><br /></p>
+<p></p>
+<p><strong>Note</strong>: There is a slight difference between the values obtained by mathematical calculation and those obtained by LabVIEW. This is because LabVIEW calculates the statistical parameters by taking discrete points in the signal, while mathematical calculation are done using equations of waveforms generated which are continuous in nature.</p>
+<p></p>
+<h2><u>Sampling &amp; Aliasing</u></h2>
+<p></p>
+<p>While sampling of a data, the problem of aliasing can occur if the Nyquist-Shanon criterion is not fulfilled. In other words, if the sampling frequency is not more than or equal to twice of the signal frequency, the problem of aliasing may occur.<br /> <em>Aliasing</em></p>
+<p></p>
+<p>Consider for example: the signal frequency is 15 Hz while the sampling frequency is 20 Hz. Hence the ration of sampling to signal frequencies becomes 1.333. The problem of aliasing occurs which is shown by the fourier transform of original signal and that of the sampled signal, which don&rsquo;t overlap<br /> <em>Non-Aliasing</em> <br /> Consider for example: the signal frequency is 10 Hz while the sampling frequency is 50 Hz which makes the ratio of sampling to signal frequency equal to 5. Hence, the problem of aliasing doesn&rsquo;t occur, which is shown by the overlap of fourier transform of the original signal and that of the sampled signal.<br /><br /></p>
+<p></p>
+<h2><u>Convolution &amp; Correlation</u></h2>
+<p></p>
+<p>Consider for example: we have taken two signals whose convolution has to be performed. The two signals are:</p>
+<p></p>
+<p>f(t) = 5 sin (10Ďt)&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp; 0 &acirc;&curren; t &acirc;&curren; 1</p>
+<p></p>
+<p>g(t) = sin (10Ďt)&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp;&Acirc;&nbsp; 0 &acirc;&curren; t &acirc;&curren; 1</p>
+<p></p>
+<p>To perform convolution, we reverse the signal g(t) and replace the variable t by đ and shift the function g(đ) by t.</p>
+<p></p>
+<p>Thus, the convolution of f and g is written as:</p>
+<p></p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp2/images/Image_002.png" style="width: 360px; height: 35px;" /></p>
+<p>The limits of integration will have four cases:<br /> 1. t &lt; 0<br /> in this case, the two signals don&acirc;t overlap and hence the result of convolution is zero.<br /> 2. 0 &acirc;&curren; t &acirc;&curren; 1<br /> in this case, the two signals overlap and the limits of integration vary from 0 to t.<br /> 3. 1 &acirc;&curren; t &acirc;&curren; 2<br /> in this case, the two signals overlap and the limits of integration vary from t-1 to 1.<br /> 4. t &gt; 2<br /> in this case, the two signals don&acirc;t overlap and hence the result of convolution is zero. Now, taking the two integrals and putting the limits according to the above discussion, we get: (f*g)(t) = 0 at t=0 (f*g)(t) = 1.25 at t= 1.5 s (f*g)(t) = -2.5 at t= 1 s (f*g)(t) = 1.25 at t= 1.5 s (f*g)(t) = 0 at t = 2 s .<br /><br /><br /><br /><br /></p>

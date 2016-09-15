@@ -1,0 +1,67 @@
+<h1 class="text-h2-lightblue">Digital Signal Processing Toolkit</h1>
+<p></p>
+<p>Digital Signal Processing is concerned with the representation of signals by a sequence of numbers or symbols and the processing of these signals. Digital signal processing and analog signal processing are subfields of signal processing. DSP includes subfields audio and speech signal processing, sonar and radar signal processing, sensor array processing, spectral estimation, statistical signal processing, digital image processing, signal processing for communications, control of systems, biomedical signal processing, seismic data processing, etc.</p>
+<p><br /> The goal of DSP is usually to measure, filter and/or compress continuous real-world analog signals. The first step is usually to convert the signal from an analog to a digital form, by sampling it using an analog-to-digital converter (ADC), which turns analog signal into a stream of numbers. However, often, the required output signal is another analog output signal, which requires a digital-to-analog converter (DAC). Even if this process is more complex than analog processing and has a discrete value range, the application of computational power to digital signal processing allows for many advantages over analog processing in many applications, such as error detection and correction in transmission as well as data compression.</p>
+<h2>Signal Statistics</h2>
+<p></p>
+<p>This function calculates the following parameters:</p>
+<p></p>
+<p><u>Arithmetic</u><u> </u><u>Mean</u>-&nbsp; The sum of the values of a variable divided by the number of values is <br /> called arithmetic mean.</p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_001.jpg" style="width: 419px; height: 47px;" /><br /> <u>Variance<strong>-</strong><strong> </strong></u>The calculation of how far values lie from the mean value in any distribution curve is done using variance.</p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_002.jpg" style="width: 163px; height: 48px;" /><br /> (Where X is any random variable, or E[X] is its mean and Var(X) its variance.)</p>
+<p></p>
+<p><u>Mode-</u>&nbsp;&nbsp; The value that occurs most frequently in any distribution curve is called its mode.<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /> <u>RMS</u>- The root mean square, also known as the quadratic mean, is a statistical measure of the magnitude of any varying quantity.<br /><br /></p>
+<p></p>
+<p><u>Standard deviation</u>- It measures how much a distribution is spread. It is the square root of variance</p>
+<p></p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_003.jpg" style="width: 182px; height: 29px;" /></p>
+<p>Where x is any random variable, &micro; or E(x) is its mean and its standard deviation.</p>
+<p><u>Skewness</u>- It is a measure of the asymmetry of the probability distribution of a random variable</p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_004.jpg" style="width: 260px; height: 70px;" /></p>
+<p>Where x is any random variable, &micro; or E(x) is mean and is third standardized moment or skewness.</p>
+<p><u>Kurtosis</u>- It is a measure of peakedness of any curve and is normalized form of fourth standardized moment.</p>
+<p></p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_005.jpg" style="width: 32px; height: 39px;" />is fourth standardized moment.</p>
+<p></p>
+<p><u>Median</u>- It is defined as the numeric value separating the higher half of a sample, from the lower half.</p>
+<p></p>
+<h2>Convolution</h2>
+<p></p>
+<p><strong>&nbsp;</strong><u>Convolution </u>is a mathematical way of combining two signals to form a third signal,</p>
+<p></p>
+<p>defined as the integral of the product of the two functions after one is reversed and shifted. Convolution of 2 signals f and g is given as:</p>
+<p></p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_006.jpg" style="width: 264px; height: 47px;" /></p>
+<p></p>
+<p><u>Cross Correlation</u>- In signal processing, cross-correlation is a measure of similarity of two waveforms as a function of a time-lag applied to one of them. For continuous functions, f and g, the cross-correlation is defined as:</p>
+<p></p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_007.jpg" style="width: 276px; height: 60px;" /></p>
+<p></p>
+<p>Where f * denotes the complex conjugate off.</p>
+<p></p>
+<p><u>Autocorrelation </u>is the cross-correlation of a signal with itself. Given a signal f(t), the continuous autocorrelation Rff is most often defined as the continuous cross-correlation integral of f(t) with itself, at lag</p>
+<p></p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_010.jpg" style="width: 492px; height: 48px;" /></p>
+<p></p>
+<h2>Power Spectrum</h2>
+<p></p>
+<p>Power Spectrum shows frequencies containing the signal&acute;s power, by plotting a distribution of power values as a function of frequency, where "power" is considered to be the average of the signal&sup2;. For a given signal, the power spectrum gives a plot of the portion of a signal's power (energy<br /> per unit time) falling within given frequency bins. The most common way of generating a power spectrum is by using a discrete Fourier transform, but other techniques such as the maximum entropy method can also be used. </p>
+<p></p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_011.jpg" style="width: 552px; height: 397px;" /></p>
+<p></p>
+<h2>Histogram</h2>
+<p></p>
+<p>Histograms are used to plot density of data, and often for density estimation: estimating the probability density function of the underlying variable. The total area of a histogram used for probability density is always normalized to 1. If the length of the intervals on the x-axis are all 1, then a histogram is identical to a relative frequency plot.</p>
+<p></p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_012.png" style="width: 450px; height: 295px;" /></p>
+<p></p>
+<h2>FFT (Fast Fourier Transform)</h2>
+<p></p>
+<p>An FFT computes the DFT and produces exactly the same result as evaluating the DFT definition directly; the only difference is that an FFT is much faster. The basic idea is to break up a transform of length into two transforms of length using the identity</p>
+<p></p>
+<p><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_013.jpg" style="width: 503px; height: 60px;" /><img alt="" src="http://bmsip-iitr.vlabs.ac.in/exp1/images/Image_014.jpg" style="width: 386px; height: 62px;" /></p>
+<p></p>
+<p>Since the fourier transform gives the information about the frequency component of any signal, it is used for finding out what are the frequencies present in the signal if the signal is stationary i.e. the frequency component of the signal is not changing with time.</p>
+<p></p>
+<h2>DCT (Discrete Cosine Transform)</h2>
+<p><strong>&nbsp;</strong>A <strong>discrete cosine transform </strong>(<strong>DCT</strong>) expresses a sequence of finitely many &nbsp;<a href="http://en.wikipedia.org/wiki/Data_points">data points</a> in terms of a sum of <a href="http://en.wikipedia.org/wiki/Cosine">cosine</a> functions oscillating at different &nbsp;<a href="http://en.wikipedia.org/wiki/Frequency">frequencies.</a> DCTs are important to numerous<br /> applications in science and engineering, from &nbsp;<a href="http://en.wikipedia.org/wiki/Lossy_compression">lossy compression of</a> &nbsp;<a href="http://en.wikipedia.org/wiki/Audio_compression_%28data%29">audio and</a> <a href="http://en.wikipedia.org/wiki/Image_compression">images</a> (where small high-frequency components can be discarded), to &nbsp;<a href="http://en.wikipedia.org/wiki/Spectral_method">spectral methods</a> for the numerical solution of <a href="http://en.wikipedia.org/wiki/Partial_differential_equations">partial differential equations.</a> The use of <a href="http://en.wikipedia.org/wiki/Cosine">cosine</a> rather than&nbsp; <a href="http://en.wikipedia.org/wiki/Sine">sine</a> functions is critical in these applications: for compression, it turns out that cosine functions are much more efficient (as explained<br /> below, fewer are needed to approximate a typical &nbsp;<a href="http://en.wikipedia.org/wiki/Signal_%28electrical_engineering%29">signal),</a> whereas for differential equations the cosines express a particular choice of &nbsp;<a href="http://en.wikipedia.org/wiki/Boundary_condition">boundary conditions.</a></p>
