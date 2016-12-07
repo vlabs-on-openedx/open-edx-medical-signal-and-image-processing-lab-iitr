@@ -1,0 +1,26 @@
+{
+    "IIT_Roorkee-Medical_Signal_and_Image_Processing.jpg": {
+        "contentType": "image/jpeg", 
+        "content_son": {
+            "category": "asset", 
+            "course": "EEE23", 
+            "name": "IIT_Roorkee-Medical_Signal_and_Image_Processing.jpg", 
+            "org": "IIT-Roorkee", 
+            "revision": null, 
+            "run": "Anytime", 
+            "tag": "c4x"
+        }, 
+        "displayname": "IIT Roorkee-Medical Signal and Image Processing.jpg", 
+        "filename": "asset-v1:IIT-Roorkee+EEE23+Anytime+type@asset+block@IIT_Roorkee-Medical_Signal_and_Image_Processing.jpg", 
+        "import_path": null, 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "IIT-Roorkee", 
+            "EEE23", 
+            "thumbnail", 
+            "IIT_Roorkee-Medical_Signal_and_Image_Processing.jpg", 
+            null
+        ]
+    }
+}
