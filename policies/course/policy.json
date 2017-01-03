@@ -1,0 +1,50 @@
+{
+    "course/course": {
+        "advertised_start": "Anytime", 
+        "course_image": "IIT Roorkee-Medical Signal and Image Processing.jpg", 
+        "discussion_topics": {
+            "General": {
+                "id": "i4x-IITR-EM-course-EM"
+            }
+        }, 
+        "display_name": "Medical Signal and Image Processing", 
+        "instructor_info": {
+            "instructors": []
+        }, 
+        "language": "en", 
+        "learning_info": [], 
+        "start": "2016-09-30T00:00:00Z", 
+        "tabs": [
+            {
+                "name": "Home", 
+                "type": "course_info"
+            }, 
+            {
+                "name": "Course", 
+                "type": "courseware"
+            }, 
+            {
+                "name": "Textbooks", 
+                "type": "textbooks"
+            }, 
+            {
+                "name": "Discussion", 
+                "type": "discussion"
+            }, 
+            {
+                "name": "Wiki", 
+                "type": "wiki"
+            }, 
+            {
+                "name": "Progress", 
+                "type": "progress"
+            }
+        ], 
+        "xml_attributes": {
+            "filename": [
+                "course/course.xml", 
+                "course/course.xml"
+            ]
+        }
+    }
+}
