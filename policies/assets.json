@@ -1,4 +1,28 @@
 {
+    "IITRoorkee-Biomedical_Instrumentation_Lab.jpg": {
+        "contentType": "image/jpeg", 
+        "content_son": {
+            "category": "asset", 
+            "course": "EEE23", 
+            "name": "IITRoorkee-Biomedical_Instrumentation_Lab.jpg", 
+            "org": "IIT-Roorkee", 
+            "revision": null, 
+            "run": "Anytime", 
+            "tag": "c4x"
+        }, 
+        "displayname": "IITRoorkee-Biomedical Instrumentation Lab.jpg", 
+        "filename": "asset-v1:IIT-Roorkee+EEE23+Anytime+type@asset+block@IITRoorkee-Biomedical_Instrumentation_Lab.jpg", 
+        "import_path": "IITRoorkee-Biomedical Instrumentation Lab.jpg", 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "IIT-Roorkee", 
+            "EEE23", 
+            "thumbnail", 
+            "IITRoorkee-Biomedical_Instrumentation_Lab.jpg", 
+            null
+        ]
+    }, 
     "IIT_Roorkee-Medical_Signal_and_Image_Processing.jpg": {
         "contentType": "image/jpeg", 
         "content_son": {
@@ -12,7 +36,7 @@
         }, 
         "displayname": "IIT Roorkee-Medical Signal and Image Processing.jpg", 
         "filename": "asset-v1:IIT-Roorkee+EEE23+Anytime+type@asset+block@IIT_Roorkee-Medical_Signal_and_Image_Processing.jpg", 
-        "import_path": null, 
+        "import_path": "IIT Roorkee-Medical Signal and Image Processing.jpg", 
         "locked": false, 
         "thumbnail_location": [
             "c4x", 
@@ -20,6 +44,30 @@
             "EEE23", 
             "thumbnail", 
             "IIT_Roorkee-Medical_Signal_and_Image_Processing.jpg", 
+            null
+        ]
+    }, 
+    "frvb1.png": {
+        "contentType": "image/png", 
+        "content_son": {
+            "category": "asset", 
+            "course": "EEE23", 
+            "name": "frvb1.png", 
+            "org": "IIT-Roorkee", 
+            "revision": null, 
+            "run": "Anytime", 
+            "tag": "c4x"
+        }, 
+        "displayname": "frvb1.png", 
+        "filename": "asset-v1:IIT-Roorkee+EEE23+Anytime+type@asset+block@frvb1.png", 
+        "import_path": "frvb1.png", 
+        "locked": false, 
+        "thumbnail_location": [
+            "c4x", 
+            "IIT-Roorkee", 
+            "EEE23", 
+            "thumbnail", 
+            "frvb1-png.jpg", 
             null
         ]
     }
